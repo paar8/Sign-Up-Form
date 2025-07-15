@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "Clash";
+  src: url(ClashDisplay-Variable.ttf) format("truetype");
+  font-weight: 550;
+}
+
+@font-face {
+  font-family: "Bespoke";
+  src: url(BespokeSerif-Variable.ttf) format("truetype");
+  font-weight: 450;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+}
+
+#left-div {
+  height: 100vh;
+  width: 40vw;
+  position: relative;
+  overflow: hidden;
+}
+
+#right-div {
+  height: 100vh;
+  width: 60vw;
+  overflow: hidden;
+  position: relative;
+  background-color: #faf1e6;
+}
+
+#left-div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#shoutout {
+  position: absolute;
+  bottom: 1%;
+  left: 30%;
+  background-color: rgba(128, 128, 128, 0.6);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  height: 2%;
+  width: 31%;
+}
+
+a {
+  color: white;
+}
+
+.italics {
+  font-style: italic;
+  margin-right: 5px;
+  color: #a90c0c;
+}
+
+.righttext {
+  font-family: "Clash", serif;
+  font-size: 30px;
+}
+
+#righttop {
+  position: absolute;
+  top: 5%;
+  font-size: 37px;
+  margin: 15px;
+  color: #03036a;
+}
+
+#rightbottom {
+  position: absolute;
+  top: 24%;
+  font-size: 36px;
+  margin: 15px;
+  color: #e0a018;
+}
+
+form {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 12%;
+  height: 50%;
+  align-items: center;
+  width: 98%;
+  margin: 10px;
+  background-color: #f0e6db;
+  font-size: 20px;
+  border: 1px outset #c4a89e;
+  border-radius: 18px;
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+input {
+  width: 450px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 7px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  font-size: 20px;
+  border: 1px solid mintcream;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+label {
+  display: block;
+  margin-left: 10px;
+  font-size: 22px;
+  font-family: "Bespoke", serif;
+}
+
+.formgroup {
+  margin-bottom: 10px;
+}
+
+.formrow {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 25px;
+  gap: 70px;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 4%;
+  left: 10%;
+  gap: 22em;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+a#login {
+  color: #080863;
+}
+
+#logintext {
+  font-size: 25px;
+}
+
+button {
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  border: none;
+  background-color: #054362;
+  color: white;
+  font-size: 18px;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:focus{
+  border: none;
+  outline: none;
+}

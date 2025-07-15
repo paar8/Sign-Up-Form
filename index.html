@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="left-div">
+      <img src="bench near sea.jpg" alt="a bench under a tree near the ocean" />
+      <span id="shoutout"
+        >Photo by
+        <a
+          href="https://unsplash.com/@oscar_se_balade?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Oscar Se balade</a
+        >
+        on
+        <a
+          href="https://unsplash.com/photos/brown-wooden-bench-near-body-of-water-during-daytime-nMxJp9R5Oq4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Unsplash</a
+        >
+      </span>
+    </div>
+    <div id="right-div">
+      <div id="righttop" class="righttext">
+        This is not a real online service! You know you need something like this
+        in your life to help you realise your deepest dreams. Sign Up
+        <span class="italics">now</span> to get started.
+      </div>
+      <div id="rightbottom" class="righttext">
+        You <span class="italics">know</span> you want to.
+      </div>
+      <form action="#" method="post">
+        <div class="formrow">
+          <div class="formgroup">
+            <label for="name">First Name</label>
+            <input type="text" name="name" id="name"  />
+          </div>
+          <div class="formgroup">
+            <label for="surname">Last Name</label>
+            <input type="text" name="surname" id="surname" />
+          </div>
+        </div>
+        <div class="formrow">
+          <div class="formgroup">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="formgroup">
+            <label for="number">Phone Number</label>
+            <input type="tel" pattern="\d{10}" inputmode="numeric" title="Please enter a 10-digit phone number" name="number" id="number" />
+          </div>
+        </div>
+        <div class="formrow">
+          <div class="formgroup">
+            <label for="password1">Password</label>
+            <input type="text" name="password1" id="password1" />
+          </div>
+          <div class="formgroup">
+            <label for="password2">Confirm Password</label>
+            <input type="text" name="password2" id="password2" />
+          </div>
+        </div>
+      </form>
+      <div class="options">
+          <h3 id="logintext">Already have an account? <a href="#" id="login">Log In</a></h3>
+          <button type="button">Create Account</button>
+      </div>
+    </div>
+  </body>
+</html>
